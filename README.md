@@ -35,3 +35,9 @@ def DETECT_EYE(frame):
         break
     cv2.imshow("SingleEye", singleEye)
 ```
+
+
+### Todos
+
+ - Add slider to alter threshold value.
+ - Map retina movement range with the screen resolution.
