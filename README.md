@@ -2,7 +2,7 @@
 Move mouse cursor by tracking your retina.
 
 ## Main Eye Tracking Function
-![Screenshot](https://raw.githubusercontent.com/RitosomPal/Eye-Cursor/screenshot/EyeTrack.png "Screenshot")
+![Screenshot](https://github.com/RitosomPal/Eye-Cursor/blob/master/screenshot/EyeTrack.png "Screenshot")
 ```py
 detector = cv2.CascadeClassifier('haarcascade_eye.xml')
 
