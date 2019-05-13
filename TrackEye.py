@@ -32,9 +32,8 @@ def DETECT_EYE(frame):
         cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
         singleEye = gray[y:y+h, x:x+w]
         break
-    # singleEye = cv2.resize(singleEye, (300, 200))
-    singleEye = cv2.GaussianBlur(singleEye, (9, 9), 0)
-    _, thre = cv2.threshold(singleEye, 75, 255, cv2.THRESH_BINARY_INV)
+    singleEye = cv2.GaussianBlur(singleEye, (9, 9), 0) 
+    _, thre = cv2.threshold(singleEye, 75, 255, cv2.THRESH_BINARY_INV) # Chang Threshold as required
     _, cnt, _ = cv2.findContours(
         thre, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     cnt = sorted(cnt, key=lambda x: cv2.contourArea(x), reverse=True)
