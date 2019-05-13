@@ -1,6 +1,15 @@
 # Eye-Cursor
 Move mouse cursor by tracking your retina.
 
+## Get Started
+1. Clone or download the repo, and then,
+```sh
+$ cd Eye-Cursor
+$ pip install -r requirements.txt
+$ python TrackEye.py
+```
+2. Press 'q' to exit.
+
 ## Main Eye Tracking Function
 ![Screenshot](https://github.com/RitosomPal/Eye-Cursor/blob/master/screenshot/EyeTrack.png "Screenshot")
 ```py
@@ -40,4 +49,4 @@ def DETECT_EYE(frame):
 ### Todos
 
  - Add slider to alter threshold value.
- - Map retina movement range with the screen resolution.
+ - Add calibration by mapping retina movement range with the screen resolution.
